@@ -1,0 +1,90 @@
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-2-100000.json============
+
+query point is: [50, 50, ]
+dataset encryption time: 0.392556s.
+query encryption time: 0.000371s.
+search time: 4642.98s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-3-100000.json============
+
+query point is: [89929, 63115, 3749, ]
+dataset encryption time: 0.624479s.
+query encryption time: 0.000576s.
+search time: 4891.95s.
+result: {898, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-4-100000.json============
+
+query point is: [81072, 47168, 29681, 20428, ]
+dataset encryption time: 0.768293s.
+query encryption time: 0.000762s.
+search time: 5104.36s.
+result: {898, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-5-100000.json============
+
+query point is: [6537, 15067, 50443, 87093, 76894, ]
+dataset encryption time: 0.961306s.
+query encryption time: 0.000952s.
+search time: 5296.46s.
+result: {648, 697, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-6-100000.json============
+
+query point is: [4181, 80741, 52806, 29445, 58313, 36108, ]
+dataset encryption time: 1.17005s.
+query encryption time: 0.001161s.
+search time: 5457.73s.
+result: {114, 310, 497, 648, 697, 699, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-7-100000.json============
+
+query point is: [60910, 31273, 92667, 19315, 35655, 85309, 24393, ]
+dataset encryption time: 1.34655s.
+query encryption time: 0.001342s.
+search time: 5588.82s.
+result: {18, 310, 472, 497, 647, 648, 697, 699, 766, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-8-100000.json============
+
+query point is: [87055, 13113, 46947, 63723, 45325, 63691, 41107, 55414, ]
+dataset encryption time: 1.55816s.
+query encryption time: 0.001548s.
+search time: 5835.81s.
+result: {18, 54, 104, 147, 158, 310, 472, 497, 598, 628, 646, 647, 648, 697, 699, 747, 759, 766, 844, 874, 876, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-9-100000.json============
+
+query point is: [84988, 65466, 81953, 30364, 45314, 77311, 53683, 73835, 63831, ]
+dataset encryption time: 1.7398s.
+query encryption time: 0.001732s.
+search time: 6108.04s.
+result: {18, 54, 82, 104, 114, 147, 158, 162, 255, 310, 343, 472, 497, 502, 598, 633, 646, 647, 648, 697, 699, 747, 766, 844, 872, 874, 876, 898, 937, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-10-100000.json============
+
+query point is: [79138, 94989, 18765, 14802, 74368, 72698, 97585, 7228, 16198, 66447, ]
+dataset encryption time: 1.91881s.
+query encryption time: 0.001906s.
+search time: 6142.99s.
+result: {18, 54, 82, 104, 114, 147, 158, 162, 255, 310, 337, 343, 376, 388, 389, 472, 478, 497, 502, 538, 545, 598, 633, 648, 697, 699, 747, 766, 844, 858, 872, 874, 876, 898, 932, 937, }
+
+--------------------------------------------------------------
+

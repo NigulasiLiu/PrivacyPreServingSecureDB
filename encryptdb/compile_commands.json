@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/emulator.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/emulator.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/emulator.cc",
+  "output": "CMakeFiles/mainExe.dir/src/emulator.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/emulator_struct.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/emulator_struct.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/emulator_struct.cc",
+  "output": "CMakeFiles/mainExe.dir/src/emulator_struct.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/main.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/main.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/main.cc",
+  "output": "CMakeFiles/mainExe.dir/src/main.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/merkel.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/merkel.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/merkel.cc",
+  "output": "CMakeFiles/mainExe.dir/src/merkel.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/phe.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/phe.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/phe.cc",
+  "output": "CMakeFiles/mainExe.dir/src/phe.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/she.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/she.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/she.cc",
+  "output": "CMakeFiles/mainExe.dir/src/she.cc.o"
+},
+{
+  "directory": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/eigen3 -I/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/include -std=gnu++17 -o CMakeFiles/mainExe.dir/src/tools.cc.o -c /home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/tools.cc",
+  "file": "/home/pengyubo/wlby/2024_11_13_exp_check/encryptdb/src/tools.cc",
+  "output": "CMakeFiles/mainExe.dir/src/tools.cc.o"
+}
+]

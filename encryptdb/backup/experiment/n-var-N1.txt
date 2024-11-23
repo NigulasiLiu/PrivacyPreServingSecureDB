@@ -1,0 +1,100 @@
+============/home/pengyubo/wlby/globcom/experiment/dataset/200-3-100000.json============
+
+query point is: [22241, 41304, 45924, ]
+dataset encryption time: 0.128153s.
+query encryption time: 0.000573s.
+search time: 204.894s.
+result: {147, 158, 164, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/400-3-100000.json============
+
+query point is: [70118, 95573, 14401, ]
+dataset encryption time: 0.250874s.
+query encryption time: 0.000593s.
+search time: 783.987s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/600-3-100000.json============
+
+query point is: [16042, 30420, 33410, ]
+dataset encryption time: 0.348846s.
+query encryption time: 0.000576s.
+search time: 1745.68s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/800-3-100000.json============
+
+query point is: [52235, 33669, 81964, ]
+dataset encryption time: 0.46259s.
+query encryption time: 0.000573s.
+search time: 3117.95s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1000-3-100000.json============
+
+query point is: [51983, 17235, 62852, ]
+dataset encryption time: 0.578824s.
+query encryption time: 0.000574s.
+search time: 4821.65s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1200-3-100000.json============
+
+query point is: [23847, 39153, 29145, ]
+dataset encryption time: 0.688797s.
+query encryption time: 0.000572s.
+search time: 7368.74s.
+result: {898, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1400-3-100000.json============
+
+query point is: [98894, 28354, 73942, ]
+dataset encryption time: 0.801143s.
+query encryption time: 0.000569s.
+search time: 9389.01s.
+result: {}
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1600-3-100000.json============
+
+query point is: [48431, 12037, 11096, ]
+dataset encryption time: 0.927995s.
+query encryption time: 0.000576s.
+search time: 12440s.
+result: {898, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/1800-3-100000.json============
+
+query point is: [31302, 52912, 28348, ]
+dataset encryption time: 1.05044s.
+query encryption time: 0.000572s.
+search time: 15569.5s.
+result: {898, }
+
+--------------------------------------------------------------
+
+============/home/pengyubo/wlby/globcom/experiment/dataset/2000-3-100000.json============
+
+query point is: [75241, 77705, 18040, ]
+dataset encryption time: 1.15138s.
+query encryption time: 0.000573s.
+search time: 19668.8s.
+result: {898, }
+
+--------------------------------------------------------------
+
