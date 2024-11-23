@@ -1,0 +1,1 @@
+This repository contains C++ implementations of various Privacy-Preserving Secure Database (PrivacyPreServingSecureDB) schemes. Each directory includes an `experiment` subdirectory. To conduct batch performance evaluation experiments, simply execute the `perform.py` script using Python 3.
