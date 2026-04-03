@@ -34,18 +34,17 @@ def thread_main_func(threadId):
         os.system(cmd)
     print(f'[{threadId}] thread exit')
 
-def gen_dataset_file(n: int):
-    num_len = 4
+def gen_dataset_file(n: int, num_len: int):
     filename = f'n{n}-byte{num_len}.json'
     relative_path = f'../dataset/{filename}'
     if not os.path.isfile(relative_path):
         os.system(f'../dataset/genDataset.py --n {n} --byte {num_len} --out {relative_path}')
     return relative_path
 
-def generate_cmd_list(n: int, round: int, tag = ""):
+def generate_cmd_list(n: int, num_len: int, round: int, tag = ""):
     cmd_list = []
     for i in range(1, round+1):
-        output_filename = f'{n}-{i}-{tag}.txt'
+        output_filename = f'{n}-byte{num_len}-{i}-{tag}.txt'
         output_path = f'./output/{output_filename}'
         cmd = f'../build/mainExe {n} > {output_path}'
         cmd_list.append(cmd)
@@ -54,11 +53,13 @@ def generate_cmd_list(n: int, round: int, tag = ""):
 def main():
     thread_num = 10
     round = 3
-    orders = [2*i for i in range(4, 11)]
+    orders = [2*i for i in range(4, 11)]  # [8, 10, 12, 14, 16, 18, 20]
+    byte_sizes = [1, 2, 8]  # 数据大小（字节），对应 8, 16, 64 bit
     n_arr = [(2 ** i) for i in orders]
     cmd_list = []
-    for i in range(len(n_arr)):
-        cmd_list += generate_cmd_list(n_arr[i], round, f'2order{orders[i]}')
+    for num_len in byte_sizes:
+        for i in range(len(n_arr)):
+            cmd_list += generate_cmd_list(n_arr[i], num_len, round, f'2order{orders[i]}')
     random.shuffle(cmd_list)
     for cmd in cmd_list:
         work_queue.put(cmd)
