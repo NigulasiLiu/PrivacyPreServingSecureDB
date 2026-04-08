@@ -38,7 +38,7 @@ def gen_dataset_file(n: int, num_len: int):
     filename = f'n{n}-byte{num_len}.json'
     relative_path = f'../dataset/{filename}'
     if not os.path.isfile(relative_path):
-        os.system(f'../dataset/genDataset.py --n {n} --byte {num_len} --out {relative_path}')
+        os.system(f'python3 ../dataset/genDataset.py --n {n} --byte {num_len} --out {relative_path}')
     return relative_path
 
 def generate_cmd_list(n: int, num_len: int, round: int, tag = ""):
