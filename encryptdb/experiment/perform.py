@@ -57,8 +57,15 @@ def generate_cmd_list(n: int, num_len: int, round: int, tag = ""):
 def main():
     thread_num = 10
     round = 3
-    orders = [2*i for i in range(4, 16)]  # [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
-    byte_sizes = [1, 2, 4, 8]  # 数据大小（字节），对应 8, 16, 32, 64 bit
+
+    # ====== 修改这里 ======
+    # 原版： orders = [2*i for i in range(4, 16)]  # [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+    # 原版： byte_sizes = [1, 2, 4, 8]  # 数据大小（字节），对应 8, 16, 32, 64 bit
+
+    orders = [22, 24, 26]      # 只跑 2^22, 2^24, 2^26
+    byte_sizes = [4]           # 32bit 数据，对应 4 bytes
+    # =====================
+
     n_arr = [2 ** i for i in orders]
     cmd_list = []
     for num_len in byte_sizes:
@@ -67,17 +74,16 @@ def main():
     random.shuffle(cmd_list)
     for cmd in cmd_list:
         work_queue.put(cmd)
-    
+
     print (f'thread_num = {thread_num}')
     for i in range(thread_num):
         t = Worker(i, thread_main_func)
         t.start()
         threads.append(t)
-    
+
     for t in threads:
         t.join()
 
 if __name__ == '__main__':
     main()
     format_to_table()
-    
