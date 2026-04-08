@@ -113,14 +113,31 @@ struct Dataset
     }
 
     void RetrieveDataset(const string& filename) {
-        int n = get_n_from_filename(filename);
-        setN(n);
-        nlohmann::json json_obj;
-        std::ifstream jfile(filename);
-        jfile >> json_obj;
-        json_obj.get_to(plain.data);
-        jfile.close();
-    }
+            int n = get_n_from_filename(filename);
+            setN(n); // 这一步已经提前 resize 了 plain.data
+
+            std::ifstream file(filename);
+            if (!file.is_open()) {
+                std::cerr << "无法打开数据集文件: " << filename << std::endl;
+                exit(1);
+            }
+
+            std::string line;
+            int idx = 0;
+            // 逐行读取，内存占用始终极低
+            while (std::getline(file, line) && idx < n) {
+                if (line.empty()) continue;
+
+                size_t colonPos = line.find(':');
+                if (colonPos != std::string::npos) {
+                    std::string hexValueStr = line.substr(colonPos + 1);
+                    // 十六进制转为长整型，存入 encryptdb 特有的 plain.data 数组中
+                    plain.data[idx] = std::stoull(hexValueStr, nullptr, 16);
+                    idx++;
+                }
+            }
+            file.close();
+        }
 
     int db_get(int i, int j) {
         return plain.get(i, j);

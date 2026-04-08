@@ -35,9 +35,12 @@ def thread_main_func(threadId):
     print(f'[{threadId}] thread exit')
 
 def gen_dataset_file(n: int, num_len: int):
-    filename = f'n{n}-byte{num_len}.json'
+    # 仅仅把这里的 .json 改成了 .txt
+    filename = f'n{n}-byte{num_len}.txt'
     relative_path = f'../dataset/{filename}'
-    if not os.path.isfile(relative_path):
+
+    # 增加了一个文件大小检查，防止残留的 0 字节文件影响实验
+    if not os.path.isfile(relative_path) or os.path.getsize(relative_path) == 0:
         os.system(f'python3 ../dataset/genDataset.py --n {n} --byte {num_len} --out {relative_path}')
     return relative_path
 
